@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="AnnuaireJMS" default="default" basedir=".">
     <description>Builds, tests, and runs the project AnnuaireJMS.</description>
-    
-    <target name="package-for-store" depends="jar">
+        <target name="package-for-store" depends="jar">
         <property name="store.jar.name" value="AnnuaireJMS"/>
         <property name="store.dir" value="store"/>
         <property name="store.jar" value="${store.dir}/${store.jar.name}.jar"/>
