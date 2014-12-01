@@ -37,6 +37,8 @@ exit /B 1
 :okJavaHome
 
 set _RUNJAVA="%JAVA_HOME%\bin\java"
+set OPENJMS_HOME=%CD%\jms
+goto okOpenJMSHome
 
 rem Guess OPENJMS_HOME if it is not set
 if not "%OPENJMS_HOME%" == "" goto gotOpenJMSHome

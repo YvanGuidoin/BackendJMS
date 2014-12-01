@@ -1,11 +1,13 @@
 @echo off
-call .\jms\bin\startup.bat
-%JAVA_HOME%\bin\java.exe %CD%\Annuaire\annuaire_jms.jar AnnuaireJMS
-%JAVA_HOME%\bin\java.exe %CD%\Banque\banque.jar Banque
-%JAVA_HOME%\bin\java.exe %CD%\Clientele\clientele.jar Clientele
-%JAVA_HOME%\bin\java.exe %CD%\Electromenager\objects.jar Biens
-%JAVA_HOME%\bin\java.exe %CD%\Hifi\objects.jar Biens
-%JAVA_HOME%\bin\java.exe %CD%\Informatique\objects.jar Biens
-%JAVA_HOME%\bin\java.exe %CD%\Z\z.jar LaunchServer
-pause
+start cmd /k Call %CD%\jms\bin\startup.bat
+TIMEOUT 5
+start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Annuaire\annuaire_jms.jar localhost
+TIMEOUT 5
+start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Banque\banque.jar localhost
+start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Clientele\clientele.jar localhost
+start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Electromenager\objects.jar localhost ELECTROMENAGER
+start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Hifi\objects.jar localhost HIFI
+start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Informatique\objects.jar localhost INFORMATIQUE
+TIMEOUT 5
+start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Z\z.jar localhost localhost
 exit

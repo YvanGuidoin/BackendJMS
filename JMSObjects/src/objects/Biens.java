@@ -32,17 +32,22 @@ public class Biens extends Lancement {
     @Override
     public void onThreadsLaunch() {
         super.onThreadsLaunch();
-        categorie = new CustomCategoriesInput().showDialog();
+        if(categorie == null) categorie = new CustomCategoriesInput().showDialog();
         System.out.println("Categorie : " + categorie.toString());
         new Thread(new BDDUpdater()).start();
     }
 
     public static void main(String[] args) {
+        if(args.length > 0) Biens.setCategorie(Categories.valueOf(args[0]));
         new Biens().run();
     }
 
     public static Categories getCategorie() {
         return categorie;
+    }
+    
+    public static void setCategorie(Categories cat){
+        categorie = cat;
     }
 
     @Override

@@ -57,8 +57,7 @@ public class LaunchServer extends Lancement {
 
     @Override
     public void onThreadsLaunch() {
-        try {
-            
+        try {            
             InetAddress add;
             do{
                 String ipNode = new CustomInputString("IP du serveur nodeJS", "localhost", "Entrez une IP").showDialog();
@@ -72,13 +71,14 @@ public class LaunchServer extends Lancement {
             //lancement Webservices
             Server server = new Server(8080);
             ServletHandler handler = new ServletHandler();
-            handler.addServletWithMapping(ClientServlet.class, "/creation");
+            handler.addServletWithMapping(ClientServlet.class, "/client");
             handler.addServletWithMapping(ConnexionServlet.class, "/connexion");
             handler.addServletWithMapping(ObjectsServlet.class, "/objet");
             handler.addServletWithMapping(EnchereServlet.class, "/enchere");
             server.setHandler(handler);
             server.start();
             server.join();
+            
         } catch (Exception ex) {
             Logger.getLogger(LaunchServer.class.getName()).log(Level.SEVERE, null, ex);
         }
