@@ -1,8 +1,8 @@
 package banque;
 
 
-import lib.CustomJMSSender;
-import lib.FilesJMS;
+import basecode.CustomJMSSender;
+import basecode.FilesJMS;
 
 /**
  *

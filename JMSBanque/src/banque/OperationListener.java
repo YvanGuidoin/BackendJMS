@@ -1,13 +1,13 @@
 package banque;
 
 
-import lib.CustomJMSListener;
+import basecode.CustomJMSListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.ObjectMessage;
-import lib.FilesJMS;
+import basecode.FilesJMS;
 import messages.Ecriture;
 import messages.Operation;
 import messages.RetourBanque;

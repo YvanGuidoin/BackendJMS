@@ -3,11 +3,9 @@ package banque;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import lib.FilesJMS;
-import lib.Lancement;
-import lib.TabAdresse;
+import basecode.FilesJMS;
+import basecode.Lancement;
+import basecode.TabAdresse;
 
 /**
  *
