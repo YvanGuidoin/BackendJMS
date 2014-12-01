@@ -1,4 +1,4 @@
 @echo off
 
-./jms/bin/shutdown.bat
+call .\jms\bin\shutdown.bat
 exit
