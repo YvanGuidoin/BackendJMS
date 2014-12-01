@@ -2,7 +2,7 @@
 <project name="JMSBanque" default="default" basedir=".">
     <description>Builds, tests, and runs the project JMSBanque.</description>    
     <target name="package-for-store" depends="jar">
-        <property name="store.jar.name" value="AnnuaireJMS"/>
+        <property name="store.jar.name" value="JMSBanque"/>
         <property name="store.dir" value="store"/>
         <property name="store.jar" value="${store.dir}/${store.jar.name}.jar"/>
         <echo message="Packaging ${application.title} into a single JAR at ${store.jar}"/>

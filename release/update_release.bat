@@ -1,8 +1,10 @@
-copy ../AnnuaireJMS/store/AnnuaireJMS.jar ./Annuaire/annuaire_jms.jar
-copy ../JMSBanque/store/JMSBanque.jar ./Banque/banque.jar
-copy ../JMSClientele/store/JMSClientele.jar ./Clientele/clientele.jar
-copy ../JMSObjects/store/JMSObjects.jar ./Electromenager/objects.jar
-copy ../JMSObjects/store/JMSObjects.jar ./Hifi/objects.jar
-copy ../JMSObjects/store/JMSObjects.jar ./Informatique/objects.jar
-copy ../ServeurZ/store/ServeurZ.jar ./Z/z.jar
+@echo off
+xcopy "%CD%\..\AnnuaireJMS\store\AnnuaireJMS.jar" 		"%CD%\Annuaire\annuaire_jms.jar" /Y
+xcopy "%CD%\..\JMSBanque\store\JMSBanque.jar" 			"%CD%\Banque\banque.jar" /Y
+xcopy "%CD%\..\JMSClientele\store\JMSClientele.jar" 	"%CD%\Clientele\clientele.jar" /Y
+xcopy "%CD%\..\JMSObjects\store\JMSObjects.jar" 		"%CD%\Electromenager\objects.jar" /Y
+xcopy "%CD%\..\JMSObjects\store\JMSObjects.jar" 		"%CD%\Hifi\objects.jar" /Y
+xcopy "%CD%\..\JMSObjects\store\JMSObjects.jar" 		"%CD%\Informatique\objects.jar" /Y
+xcopy "%CD%\..\ServeurZ\store\ServeurZ.jar" 			"%CD%\Z\z.jar" /Y
 pause
+exit

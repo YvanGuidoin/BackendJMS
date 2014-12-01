@@ -7,3 +7,4 @@
 %JAVA_HOME%\bin\javaw.exe ./Hifi/objects.jar
 %JAVA_HOME%\bin\javaw.exe ./Informatique/objects.jar
 %JAVA_HOME%\bin\javaw.exe ./Z/z.jar
+exit
