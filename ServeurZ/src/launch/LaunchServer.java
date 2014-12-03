@@ -7,10 +7,13 @@ import java.util.logging.Logger;
 import jms.MiseAJourListener;
 import jms.ObjectsCache;
 import basecode.Adresse;
+import basecode.Annuaire;
+import basecode.Categories;
 import basecode.CustomInputString;
 import basecode.FilesJMS;
 import basecode.Lancement;
 import basecode.TabAdresse;
+import java.net.UnknownHostException;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
 import webservice.ClientServlet;
@@ -57,13 +60,15 @@ public class LaunchServer extends Lancement {
 
     @Override
     public void onThreadsLaunch() {
-        try {            
-            InetAddress add;
-            do{
-                String ipNode = new CustomInputString("IP du serveur nodeJS", "localhost", "Entrez une IP").showDialog();
-                add = InetAddress.getByName(ipNode);
-            } while(!(add instanceof Inet4Address));
-            nodeJS = new Adresse(add);
+        try {
+            if(nodeJS.getInet() == null){
+                InetAddress add;
+                do{
+                    String ipNode = new CustomInputString("IP du serveur nodeJS", "localhost", "Entrez une IP").showDialog();
+                    add = InetAddress.getByName(ipNode);
+                } while(!(add instanceof Inet4Address));
+                nodeJS = new Adresse(add);
+            }
             
             //reset cache
             ObjectsCache.getInstance().init();
@@ -71,10 +76,10 @@ public class LaunchServer extends Lancement {
             //lancement Webservices
             Server server = new Server(8080);
             ServletHandler handler = new ServletHandler();
-            handler.addServletWithMapping(ClientServlet.class, "/client");
-            handler.addServletWithMapping(ConnexionServlet.class, "/connexion");
-            handler.addServletWithMapping(ObjectsServlet.class, "/objet");
-            handler.addServletWithMapping(EnchereServlet.class, "/enchere");
+            handler.addServletWithMapping(ClientServlet.class, "/client/*");
+            handler.addServletWithMapping(ConnexionServlet.class, "/connexion/*");
+            handler.addServletWithMapping(ObjectsServlet.class, "/objet/*");
+            handler.addServletWithMapping(EnchereServlet.class, "/enchere/*");
             server.setHandler(handler);
             server.start();
             server.join();
@@ -85,6 +90,12 @@ public class LaunchServer extends Lancement {
     }
 
     public static void main(String[] args) {
+        if(args.length > 0) try {
+            Annuaire.setIp(InetAddress.getByName(args[0]));
+            LaunchServer.setNodeJS(new Adresse(args[1]));
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(LaunchServer.class.getName()).log(Level.SEVERE, null, ex);
+        }
         new LaunchServer().run();
     }
 
@@ -92,4 +103,9 @@ public class LaunchServer extends Lancement {
         if(nodeJS == null) nodeJS = new Adresse("localhost");
         return nodeJS;
     }
+
+    public static void setNodeJS(Adresse nodeJS) {
+        LaunchServer.nodeJS = nodeJS;
+    }
+    
 }

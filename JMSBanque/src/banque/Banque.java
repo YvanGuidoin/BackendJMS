@@ -1,11 +1,15 @@
 package banque;
 
 
+import basecode.Adresse;
+import basecode.Annuaire;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import basecode.FilesJMS;
 import basecode.Lancement;
 import basecode.TabAdresse;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -29,6 +33,11 @@ public class Banque extends Lancement {
     }
 
     public static void main(String[] args) {
+        if(args.length > 0) try {
+            Annuaire.setIp(InetAddress.getByName(args[0]));
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(Banque.class.getName()).log(Level.SEVERE, null, ex);
+        }
         new Banque().run();
     }
 

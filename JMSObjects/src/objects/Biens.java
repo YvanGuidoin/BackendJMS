@@ -1,10 +1,15 @@
 package objects;
 
 
+import basecode.Annuaire;
 import basecode.Categories;
 import basecode.FilesJMS;
 import basecode.Lancement;
 import basecode.TabAdresse;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -38,7 +43,12 @@ public class Biens extends Lancement {
     }
 
     public static void main(String[] args) {
-        if(args.length > 0) Biens.setCategorie(Categories.valueOf(args[0]));
+        if(args.length > 0) try {
+            Annuaire.setIp(InetAddress.getByName(args[0]));
+            Biens.setCategorie(Categories.valueOf(args[0]));
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(Biens.class.getName()).log(Level.SEVERE, null, ex);
+        }
         new Biens().run();
     }
 

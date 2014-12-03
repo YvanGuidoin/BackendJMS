@@ -6,6 +6,10 @@ import basecode.ConsolePanel;
 import basecode.FilesJMS;
 import basecode.Lancement;
 import basecode.TabAdresse;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -22,7 +26,16 @@ public class AnnuaireJMS {
         System.out.println("Lancement du serveur d'annuaire des queues JMS");
 
         //demande adresse queue annuaire
-        Annuaire.setIp(Lancement.getAdresseAnnuaire());
+        if(args.length > 0){
+            String ip = args[0];
+            try {
+                Annuaire.setIp(InetAddress.getByName(ip));
+            } catch (UnknownHostException ex) {
+                Logger.getLogger(AnnuaireJMS.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } else{
+            Annuaire.setIp(Lancement.getAdresseAnnuaire());    
+        }        
         System.out.println("File annuaire -> " + Annuaire.getTextIp());
 
         //initialise l'annuaire

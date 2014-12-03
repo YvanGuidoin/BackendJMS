@@ -22,7 +22,7 @@ public abstract class Lancement implements Runnable {
         this.onParamsSet();
         ConsolePanel.launchConsole(this.title);
 
-        Annuaire.setIp(this.getAdresseAnnuaire());
+        if(Annuaire.getIp() == null) Annuaire.setIp(this.getAdresseAnnuaire());
         this.onFilesCompletion();
 
 
