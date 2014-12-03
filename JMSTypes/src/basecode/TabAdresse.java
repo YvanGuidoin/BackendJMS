@@ -110,6 +110,17 @@ public class TabAdresse implements Serializable {
             }
         }
     }
+    
+    public void renseignerAllFiles(String arg){
+        final TreeMap<FilesJMS, Adresse> aRemplir = this.getNullAdresses();
+        for (Map.Entry<FilesJMS, Adresse> aEntry : aRemplir.entrySet()) {
+            FilesJMS key = aEntry.getKey();
+            Adresse value = new Adresse(arg);
+            if (value.getInet() instanceof Inet4Address) {
+                tab.put(key, value);
+            }
+        }
+    }
 
     public boolean obtenirFiles() {
         TreeMap<FilesJMS, Adresse> annuaire = Annuaire.getAnnuaire();

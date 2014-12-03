@@ -1,3 +1,4 @@
 @echo off
-start cmd /k Call %CD%\jms\bin\shutdown.bat
+cd jms\bin
+START /B CMD /C CALL "shutdown.bat"
 exit

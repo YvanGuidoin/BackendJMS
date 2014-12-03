@@ -6,8 +6,6 @@ rem $Id: stub.bat,v 1.1 2004/11/26 02:59:09 tanderson Exp $
 rem ---------------------------------------------------------------------------
 
 if "%OS%" == "Windows_NT" setlocal
-set OPENJMS_HOME=%CD%\jms
-goto okHome
 
 rem Guess OPENJMS_HOME if not defined
 if not "%OPENJMS_HOME%" == "" goto gotHome

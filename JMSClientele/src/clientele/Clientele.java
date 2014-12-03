@@ -25,6 +25,16 @@ public class Clientele extends Lancement {
         NotificationEnchereListener notificationEnchereListener = new NotificationEnchereListener();
         TableauBordListener tableauBordListener = new TableauBordListener();
     }
+    
+    @Override
+    public void onParamsSet() {
+        this.setTitle("Serveur Clientèle");
+        try {
+            this.setOpenMessage("Serveur de clientele lance sur l'adresse " + InetAddress.getLocalHost().getHostAddress());
+        } catch (UnknownHostException ex) {
+            this.setOpenMessage("Serveur de clientele lance");
+        }
+    }
 
     public static void main(String[] args) {
         if(args.length > 0) try {

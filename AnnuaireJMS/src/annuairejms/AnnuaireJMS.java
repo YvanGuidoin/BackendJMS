@@ -47,7 +47,11 @@ public class AnnuaireJMS {
             }
         }
         TabAdresse.getInstance().ajouterAllFiles(list);
-        TabAdresse.getInstance().renseignerFiles();
+        if(args.length > 0){
+            TabAdresse.getInstance().renseignerAllFiles(args[0]);
+        } else {
+            TabAdresse.getInstance().renseignerFiles();
+        }
         System.out.println(TabAdresse.getInstance().toString());
 
         //lance la connexion jms et le listener

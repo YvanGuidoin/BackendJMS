@@ -1,13 +1,22 @@
 @echo off
-start cmd /k Call %CD%\jms\bin\startup.bat
+JAVA_FILE=" %JAVA_HOME%\bin\javaw.exe -jar"
+cd jms\bin
+START /B CMD /C CALL "startup.bat"
 TIMEOUT 5
-start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Annuaire\annuaire_jms.jar localhost
+cd ..\..\Annuaire
+start %JAVA_FILE% annuaire_jms.jar localhost
+cd ..\Banque
 TIMEOUT 5
-start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Banque\banque.jar localhost
-start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Clientele\clientele.jar localhost
-start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Electromenager\objects.jar localhost ELECTROMENAGER
-start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Hifi\objects.jar localhost HIFI
-start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Informatique\objects.jar localhost INFORMATIQUE
+start %JAVA_FILE% banque.jar localhost
+cd ..\Clientele
+start %JAVA_FILE% clientele.jar localhost
+cd..\Electromenager
+start "" %JAVA_FILE% objects.jar localhost ELECTROMENAGER -launch
+cd ..\Hifi
+start "" %JAVA_FILE% objects.jar localhost HIFI -launch
+cd ..\Informatique
+start "" %JAVA_FILE% objects.jar localhost INFORMATIQUE  -launch
+cd..\Z
 TIMEOUT 5
-start %JAVA_HOME%\bin\javaw.exe -jar %CD%\Z\z.jar localhost localhost
+start "" %JAVA_FILE% z.jar localhost localhost -launch
 exit
