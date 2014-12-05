@@ -1,6 +1,7 @@
 package objects;
 
 
+import messages.StatutEnchere;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -239,6 +240,21 @@ public class SqlRequester extends CustomSqlRequester {
             return null;
         }
     }
+    
+    public int getIdCreator(int idBien){
+        try {
+            Statement stat = conn.createStatement();
+            ResultSet res = stat.executeQuery("SELECT ID_CREATOR FROM BIEN WHERE ID = '" + idBien + "'");
+            res.next();
+            int idCreator = res.getInt(1);
+            res.close();
+            stat.close();
+            return idCreator;
+        } catch (SQLException ex) {
+            Logger.getLogger(SqlRequester.class.getName()).log(Level.SEVERE, null, ex);
+            return -1;
+        }
+    }
 
     //TABLE ENCHERE
     public double getMontantMax(int id) {
@@ -339,7 +355,7 @@ public class SqlRequester extends CustomSqlRequester {
         ArrayList<Enchere> list = new ArrayList<Enchere>();
         try {
             Statement stat = conn.createStatement();
-            ResultSet res = stat.executeQuery("SELECT ID_CLIENT, ID_OBJET, MAX(MONTANT_MAX) FROM ENCHERE WHERE ID_OBJET = '" + idBien + "' GROUPE BY ID_CLIENT, ID_OBJET");
+            ResultSet res = stat.executeQuery("SELECT ID_CLIENT, ID_OBJET, MAX(MONTANT_MAX) FROM ENCHERE WHERE ID_OBJET = '" + idBien + "' GROUP BY ID_CLIENT, ID_OBJET");
             while (res.next()) {
                 list.add(new Enchere(res.getInt(1), res.getInt(2), Biens.getCategorie(), res.getDouble(3)));
             }
@@ -408,7 +424,8 @@ public class SqlRequester extends CustomSqlRequester {
                     res.getDouble(11),
                     res.getInt(12),
                     Biens.getCategorie(), 
-                    listEnchere);
+                    listEnchere,
+                    StatutEnchere.valueOf(res.getString(13)));
             res.close();
             stat.close();
             return desc;

@@ -1,6 +1,7 @@
 package objects;
 
 
+import messages.StatutEnchere;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -42,11 +43,12 @@ public class BDDUpdater implements Runnable, ActionListener {
     public static void fermerBien(int idBien) {
         SqlRequester.getInstance().updateStatutById(idBien, StatutEnchere.TERMINEE);
         FinEnchereSender.getInstance().send(
-                new FinEnchere(
-                        SqlRequester.getInstance().getIdClient(idBien),
-                        SqlRequester.getInstance().getIdGagnantCourant(idBien),
-                        SqlRequester.getInstance().getPrixCalcule(idBien),
-                        SqlRequester.getInstance().getDescById(idBien)));
+            new FinEnchere(
+                SqlRequester.getInstance().getIdClient(idBien),
+                SqlRequester.getInstance().getIdGagnantCourant(idBien),
+                SqlRequester.getInstance().getPrixCalcule(idBien),
+                SqlRequester.getInstance().getDescById(idBien)));
+        System.out.println("Enchere terminee objet : " + idBien);
     }
 
 }

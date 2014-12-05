@@ -47,7 +47,7 @@ public class FinEnchereListener extends CustomJMSListener {
             Notification acheteur;
             Notification vendeur;
             idRequest++;
-            String discriminant = idRequest+"";
+            String discriminant = "JMSType = '" +idRequest+"'";
             OperationSender.getInstance().send(debit, discriminant);
             RetourBanque res = (RetourBanque) CustomJMSReceiver.receive(FilesJMS.RETOUR_BANQUE, discriminant);
             RetourBanque res2;

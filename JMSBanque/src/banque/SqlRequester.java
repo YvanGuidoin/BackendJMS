@@ -71,8 +71,10 @@ public class SqlRequester extends CustomSqlRequester {
     public void addSolde(String id, double montant) {
         try {
             Statement stat = conn.createStatement();
+            String req2 = "INSERT INTO HISTO_OPERATION(IBAN, VALEUR) VALUES ('" + id + "','" + montant + "')";
             String req = "UPDATE BANQUE SET SOLDE = SOLDE + '" + montant + "' WHERE IBAN = '" + id + "'";
             System.out.println(req);
+            stat.executeUpdate(req2);
             stat.executeUpdate(req);
             stat.close();
         } catch (SQLException ex) {

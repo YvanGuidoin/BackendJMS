@@ -50,6 +50,7 @@
     <AdministeredQueue name="reset" />
     <AdministeredQueue name="retourOperation" />
     <AdministeredQueue name="retourConnexion" />
+    <AdministeredQueue name="retourDemandeNotif" />
     <AdministeredQueue name="retourReqClient" />
     <AdministeredQueue name="retourTablBord" />
     <AdministeredQueue name="tableauBord" />

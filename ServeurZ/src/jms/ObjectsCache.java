@@ -60,8 +60,8 @@ public class ObjectsCache {
     private boolean correspondToParams(DescriptionBien bien, String name, String desc, String cat){
         boolean research = false;
         if(cat != null && bien.getCategorie().name().equals(cat)) research = Boolean.logicalOr(research, true);
-        if(name != null && bien.getNom().contains(name)) research = Boolean.logicalOr(research, true);
-        if(desc != null && bien.getDescription().contains(desc)) research = Boolean.logicalOr(research, true);
+        if(name != null && bien.getNom().toLowerCase().contains(name.toLowerCase())) research = Boolean.logicalOr(research, true);
+        if(desc != null && bien.getDescription().toLowerCase().contains(desc.toLowerCase())) research = Boolean.logicalOr(research, true);
         return research;
     }
 }

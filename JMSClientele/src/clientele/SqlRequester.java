@@ -182,7 +182,12 @@ public class SqlRequester extends CustomSqlRequester {
         try {
             Statement stat = conn.createStatement();
             String contenu = gson.toJson(obj.getBien());
-            String req = "INSERT INTO NOTIFICATION(ID_CLIENT, CONTENU, TYPE_NOTIF, LUE) VALUES ('" + obj.getIdClient() + "', '" + contenu + "','" + obj.getType().name() + "', " + Boolean.toString(obj.isLue()) + ", '" + obj.getDate() + "');";
+            String req = "INSERT INTO NOTIFICATION(ID_CLIENT, CONTENU, TYPE_NOTIF, LUE, DATE_CREA) VALUES ('"
+                    + obj.getIdClient() + "', '"
+                    + contenu + "','"
+                    + obj.getType().name() + "', "
+                    + Boolean.toString(obj.isLue()) + ", '"
+                    + obj.getDate() + "');";
             System.out.println(req);
             stat.executeUpdate(req);
             stat.close();

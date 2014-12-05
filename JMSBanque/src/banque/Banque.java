@@ -1,7 +1,5 @@
 package banque;
 
-
-import basecode.Adresse;
 import basecode.Annuaire;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -43,7 +41,9 @@ public class Banque extends Lancement {
 
     @Override
     public void onFilesCompletion() {
-        TabAdresse.getInstance().ajouterFile(FilesJMS.OPERATION);
+        TabAdresse.getInstance()
+                .ajouterFile(FilesJMS.OPERATION)
+                .ajouterFile(FilesJMS.RETOUR_BANQUE);
     }
 
 }

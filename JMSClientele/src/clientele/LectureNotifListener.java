@@ -27,6 +27,7 @@ public class LectureNotifListener extends CustomJMSListener {
             LectureNotif lecture = (LectureNotif) mess.getObject();
             
             SqlRequester.getInstance().updateNotifications(lecture.getIdClient(), lecture.getDate_lecture());
+            System.out.println("Suppression notifications client :" + lecture.getIdClient());
         } catch (JMSException ex) {
             Logger.getLogger(LectureNotifListener.class.getName()).log(Level.SEVERE, null, ex);
         }

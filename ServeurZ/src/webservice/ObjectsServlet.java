@@ -1,6 +1,5 @@
 package webservice;
 
-import basecode.Categories;
 import com.google.gson.Gson;
 import java.io.IOException;
 import java.sql.Timestamp;
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import jms.CreationEnchereSender;
-import jms.CreationSender;
 import jms.FermetureEnchereSender;
 import jms.ObjectsCache;
 import messages.CreationEnchere;
@@ -62,14 +60,14 @@ public class ObjectsServlet extends HttpServlet {
         
         Calendar now = Calendar.getInstance();
         CreationEnchere message = new CreationEnchere(
-                data.getId(), 
-                data.getNom(), 
-                data.getDescription(), 
-                data.getUrlImage(), 
-                new Timestamp(now.getTimeInMillis()), 
-                data.getDuree(), 
-                data.getPrixDepart(), 
-                data.getIncrement(), 
+                data.getIdCreator(),
+                data.getNom(),
+                data.getDescription(),
+                data.getUrlImage(),
+                new Timestamp(now.getTimeInMillis()),
+                data.getDuree(),
+                data.getPrixDepart(),
+                data.getIncrement(),
                 data.getQuantite());
         CreationEnchereSender.getInstance().send(message, data.getCategorie());
         resp.getWriter().print("{\"OK\"}");
@@ -87,6 +85,7 @@ public class ObjectsServlet extends HttpServlet {
             FermetureEnchereSender.getInstance().send(
                     new FermetureEnchere(Integer.parseInt(idObjet)),
                     categorie);
+            System.out.println("Suppression de l'objet : " + idObjet);
         } else {
             resp.getWriter().print(gson.toJson("Non supporté : service /CATEGORIE/IDOBJET"));
             resp.setStatus(resp.SC_BAD_REQUEST);

@@ -22,6 +22,7 @@ public enum FilesJMS {
     OPERATION("operation"),
     REQ_CLIENT("reqClient"),
     RESET("reset"),
+    RETOUR_DEMAND_NOTIF("retourDemandeNotif"),
     RETOUR_BANQUE("retourOperation"),
     RETOUR_CONNEXION("retourConnexion"),
     RETOUR_REQ_CLIENT("retourReqClient"),

@@ -39,6 +39,7 @@ public class OperationListener extends CustomJMSListener {
 
                 if (solde + montant >= decouvertAutorise) {
                     SqlRequester.getInstance().addSolde(ope.getIBAN(), montant);
+                    System.out.println("Opération sur compte : " + ope.getIBAN() + " value : " + montant);
                     retourBanque = new RetourBanque(IBAN, Transaction.REUSSIE);
                 } else {
                     retourBanque = new RetourBanque(IBAN, Transaction.ECHEC);

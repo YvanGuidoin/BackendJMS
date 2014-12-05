@@ -208,3 +208,53 @@ javax.jms.JMSException: Cannot delete destinationreset-true since there are  act
 	at org.exolab.jms.common.threads.ThreadPool$NotifyingRunnable.run(ThreadPool.java:211)
 	at EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+18:29:51.899 INFO  [main] - Server accepting connections on tcp://192.168.0.18:3035/
+18:29:51.901 INFO  [main] - JNDI service accepting connections on tcp://192.168.0.18:3035/
+18:29:51.902 INFO  [main] - Admin service accepting connections on tcp://192.168.0.18:3035/
+18:29:51.924 INFO  [main] - Server accepting connections on rmi://192.168.0.18:1099/
+18:29:51.924 INFO  [main] - JNDI service accepting connections on rmi://192.168.0.18:1099/
+18:29:51.924 INFO  [main] - Admin service accepting connections on rmi://192.168.0.18:1099/
+18:45:47.382 ERROR [ORB-Worker-4] - Failed to remove destination=retourTablBord
+javax.jms.JMSException: Cannot delete destinationretourTablBord-true since there are  active consumers.
+	at org.exolab.jms.messagemgr.DestinationManagerImpl.removeDestination(DestinationManagerImpl.java:319)
+	at org.exolab.jms.server.AdminConnection.removeDestination(AdminConnection.java:440)
+	at org.exolab.jms.server.net.JmsAdminConnectionImpl.removeDestination(JmsAdminConnectionImpl.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.exolab.jms.net.orb.DefaultORB$Handler.invoke(DefaultORB.java:572)
+	at org.exolab.jms.net.orb.DefaultORB$1.run(DefaultORB.java:530)
+	at org.exolab.jms.common.threads.ThreadPool$NotifyingRunnable.run(ThreadPool.java:211)
+	at EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+18:47:19.775 INFO  [main] - Server accepting connections on tcp://192.168.0.18:3035/
+18:47:19.775 INFO  [main] - JNDI service accepting connections on tcp://192.168.0.18:3035/
+18:47:19.775 INFO  [main] - Admin service accepting connections on tcp://192.168.0.18:3035/
+18:47:19.791 INFO  [main] - Server accepting connections on rmi://192.168.0.18:1099/
+18:47:19.791 INFO  [main] - JNDI service accepting connections on rmi://192.168.0.18:1099/
+18:47:19.791 INFO  [main] - Admin service accepting connections on rmi://192.168.0.18:1099/
+18:50:40.437 INFO  [main] - Server accepting connections on tcp://192.168.0.18:3035/
+18:50:40.437 INFO  [main] - JNDI service accepting connections on tcp://192.168.0.18:3035/
+18:50:40.437 INFO  [main] - Admin service accepting connections on tcp://192.168.0.18:3035/
+18:50:40.468 INFO  [main] - Server accepting connections on rmi://192.168.0.18:1099/
+18:50:40.468 INFO  [main] - JNDI service accepting connections on rmi://192.168.0.18:1099/
+18:50:40.468 INFO  [main] - Admin service accepting connections on rmi://192.168.0.18:1099/
+21:28:32.055 INFO  [main] - Server accepting connections on tcp://192.168.0.18:3035/
+21:28:32.055 INFO  [main] - JNDI service accepting connections on tcp://192.168.0.18:3035/
+21:28:32.055 INFO  [main] - Admin service accepting connections on tcp://192.168.0.18:3035/
+21:28:32.102 INFO  [main] - Server accepting connections on rmi://192.168.0.18:1099/
+21:28:32.102 INFO  [main] - JNDI service accepting connections on rmi://192.168.0.18:1099/
+21:28:32.102 INFO  [main] - Admin service accepting connections on rmi://192.168.0.18:1099/
+21:45:48.390 INFO  [main] - Server accepting connections on tcp://192.168.0.18:3035/
+21:45:48.390 INFO  [main] - JNDI service accepting connections on tcp://192.168.0.18:3035/
+21:45:48.390 INFO  [main] - Admin service accepting connections on tcp://192.168.0.18:3035/
+21:45:48.437 INFO  [main] - Server accepting connections on rmi://192.168.0.18:1099/
+21:45:48.437 INFO  [main] - JNDI service accepting connections on rmi://192.168.0.18:1099/
+21:45:48.437 INFO  [main] - Admin service accepting connections on rmi://192.168.0.18:1099/
+23:02:13.112 INFO  [main] - Server accepting connections on tcp://192.168.0.18:3035/
+23:02:13.112 INFO  [main] - JNDI service accepting connections on tcp://192.168.0.18:3035/
+23:02:13.112 INFO  [main] - Admin service accepting connections on tcp://192.168.0.18:3035/
+23:02:13.158 INFO  [main] - Server accepting connections on rmi://192.168.0.18:1099/
+23:02:13.158 INFO  [main] - JNDI service accepting connections on rmi://192.168.0.18:1099/
+23:02:13.158 INFO  [main] - Admin service accepting connections on rmi://192.168.0.18:1099/

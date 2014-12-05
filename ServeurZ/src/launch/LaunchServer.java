@@ -54,6 +54,7 @@ public class LaunchServer extends Lancement {
                 .ajouterFile(FilesJMS.MISE_A_JOUR)
                 .ajouterFile(FilesJMS.NOTIFICATION)
                 .ajouterFile(FilesJMS.RESET)
+                .ajouterFile(FilesJMS.RETOUR_DEMAND_NOTIF)
                 .ajouterFile(FilesJMS.RETOUR_CONNEXION)
                 .ajouterFile(FilesJMS.RETOUR_TABLE_BORD)
                 .ajouterFile(FilesJMS.TABLE_BORD);

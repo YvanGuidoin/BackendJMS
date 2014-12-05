@@ -22,6 +22,7 @@ public class Clientele extends Lancement {
         ConnexionListener connexionListener = new ConnexionListener();
         DemandeNotifListener demandeNotifListener = new DemandeNotifListener();
         FinEnchereListener finEnchereListener = new FinEnchereListener();
+        LectureNotifListener lectureNotifListener = new LectureNotifListener();
         NotificationEnchereListener notificationEnchereListener = new NotificationEnchereListener();
         TableauBordListener tableauBordListener = new TableauBordListener();
     }
@@ -52,11 +53,13 @@ public class Clientele extends Lancement {
                 .ajouterFile(FilesJMS.CREATION_CLIENT)
                 .ajouterFile(FilesJMS.DEMANDE_NOTIF)
                 .ajouterFile(FilesJMS.FIN_ENCHERE)
+                .ajouterFile(FilesJMS.LECTURE_NOTIFS)
                 .ajouterFile(FilesJMS.NOTIFICATION)
                 .ajouterFile(FilesJMS.NOTIFICATION_ENCHERE)
                 .ajouterFile(FilesJMS.OPERATION)
                 .ajouterFile(FilesJMS.REQ_CLIENT)
                 .ajouterFile(FilesJMS.RETOUR_BANQUE)
+                .ajouterFile(FilesJMS.RETOUR_DEMAND_NOTIF)
                 .ajouterFile(FilesJMS.RETOUR_CONNEXION)
                 .ajouterFile(FilesJMS.RETOUR_REQ_CLIENT)
                 .ajouterFile(FilesJMS.RETOUR_TABLE_BORD)

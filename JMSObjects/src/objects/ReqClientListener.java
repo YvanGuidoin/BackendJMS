@@ -1,6 +1,7 @@
 package objects;
 
 
+import messages.StatutEnchere;
 import java.util.ArrayList;
 import basecode.CustomJMSListener;
 import java.util.logging.Level;

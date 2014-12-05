@@ -1,0 +1,98 @@
+12-05 20:41:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-182]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1470)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1445)
+	at org.h2.jdbc.JdbcConnection.createStatement(JdbcConnection.java:192)
+	at banque.SqlRequester.existIBAN(SqlRequester.java:29)
+	at banque.OperationListener.onMessage(OperationListener.java:35)
+	at org.exolab.jms.client.JmsMessageConsumer.onMessage(JmsMessageConsumer.java:256)
+	at org.exolab.jms.client.JmsSession.onMessage(JmsSession.java:1009)
+	at org.exolab.jms.client.net.JmsSessionStubImpl.onMessage(JmsSessionStubImpl.java:478)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.exolab.jms.net.orb.DefaultORB$Handler.invoke(DefaultORB.java:572)
+	at org.exolab.jms.net.orb.DefaultORB$1.run(DefaultORB.java:530)
+	at EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+12-05 20:41:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-182]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1470)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1445)
+	at org.h2.jdbc.JdbcConnection.createStatement(JdbcConnection.java:192)
+	at banque.SqlRequester.existIBAN(SqlRequester.java:29)
+	at banque.OperationListener.onMessage(OperationListener.java:35)
+	at org.exolab.jms.client.JmsMessageConsumer.onMessage(JmsMessageConsumer.java:256)
+	at org.exolab.jms.client.JmsSession.onMessage(JmsSession.java:1009)
+	at org.exolab.jms.client.net.JmsSessionStubImpl.onMessage(JmsSessionStubImpl.java:478)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.exolab.jms.net.orb.DefaultORB$Handler.invoke(DefaultORB.java:572)
+	at org.exolab.jms.net.orb.DefaultORB$1.run(DefaultORB.java:530)
+	at EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+12-05 20:41:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-182]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1470)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1445)
+	at org.h2.jdbc.JdbcConnection.createStatement(JdbcConnection.java:192)
+	at banque.SqlRequester.existIBAN(SqlRequester.java:29)
+	at banque.OperationListener.onMessage(OperationListener.java:35)
+	at org.exolab.jms.client.JmsMessageConsumer.onMessage(JmsMessageConsumer.java:256)
+	at org.exolab.jms.client.JmsSession.onMessage(JmsSession.java:1009)
+	at org.exolab.jms.client.net.JmsSessionStubImpl.onMessage(JmsSessionStubImpl.java:478)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.exolab.jms.net.orb.DefaultORB$Handler.invoke(DefaultORB.java:572)
+	at org.exolab.jms.net.orb.DefaultORB$1.run(DefaultORB.java:530)
+	at EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+12-05 20:41:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-182]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1470)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1445)
+	at org.h2.jdbc.JdbcConnection.createStatement(JdbcConnection.java:192)
+	at banque.SqlRequester.existIBAN(SqlRequester.java:29)
+	at banque.OperationListener.onMessage(OperationListener.java:35)
+	at org.exolab.jms.client.JmsMessageConsumer.onMessage(JmsMessageConsumer.java:256)
+	at org.exolab.jms.client.JmsSession.onMessage(JmsSession.java:1009)
+	at org.exolab.jms.client.net.JmsSessionStubImpl.onMessage(JmsSessionStubImpl.java:478)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.exolab.jms.net.orb.DefaultORB$Handler.invoke(DefaultORB.java:572)
+	at org.exolab.jms.net.orb.DefaultORB$1.run(DefaultORB.java:530)
+	at EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+12-05 20:54:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "DROP TABLE IF EXISTS HISTO_OPERATION
+CREATE[*] TABLE HISTO_OPERATION(
+	NUM_OPE INT PRIMARY KEY AUTO_INCREMENT,
+	IBAN CHAR(9),
+	VALEUR DECIMAL)"; SQL statement:
+DROP TABLE IF EXISTS HISTO_OPERATION
+CREATE TABLE HISTO_OPERATION(
+	NUM_OPE INT PRIMARY KEY AUTO_INCREMENT,
+	IBAN CHAR(9),
+	VALEUR DECIMAL) [42000-182]
+12-05 20:54:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "HISTO_OPERATION" not found; SQL statement:
+SELECT * FROM HISTO_OPERATION [42102-182]

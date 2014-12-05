@@ -18,6 +18,7 @@ import basecode.FilesJMS;
 import messages.CreationClient;
 import messages.DemandeNotif;
 import messages.LectureNotif;
+import messages.RetourDemandeNotif;
 import messages.RetourTableauBord;
 import messages.TableauBord;
 import webservice.data.DataInscriptionFromJson;
@@ -42,7 +43,7 @@ public class ClientServlet extends HttpServlet {
             if(idClient != null && chemin != null){
                 
                 if("tableau".equals(chemin)) option = Chemin.TABLEAU;
-                if("infos".equals(chemin)) option = Chemin.NOTIFS;
+                if("infos".equals(chemin)) option = Chemin.INFOS;
                 if("notifications".equals(chemin)) option = Chemin.NOTIFS;
                 int idCl = Integer.parseInt(idClient);
                 
@@ -60,11 +61,13 @@ public class ClientServlet extends HttpServlet {
                         RetourTableauBord retour2 = (RetourTableauBord) CustomJMSReceiver.receive(FilesJMS.RETOUR_TABLE_BORD, "JMSType = '" + idRequest+"'");
                         resp.getWriter().print(gson.toJson(retour2)); break;
                     case NOTIFS :
+                        idRequest++;
                         Calendar cal = Calendar.getInstance();
                         cal.add(Calendar.WEEK_OF_YEAR, -1);
                         DemandeNotif demande = new DemandeNotif(idCl, new Timestamp(cal.getTimeInMillis()), false);
-                        DemandeNotifSender.getInstance().send(demande);
-                        resp.getWriter().print(gson.toJson("OK")); break;
+                        DemandeNotifSender.getInstance().send(demande,idRequest+"");
+                        RetourDemandeNotif retour3 = (RetourDemandeNotif) CustomJMSReceiver.receive(FilesJMS.RETOUR_DEMAND_NOTIF, "JMSType = '" + idRequest+"'");
+                        resp.getWriter().print(gson.toJson(retour3)); break;
                     default: 
                         resp.getWriter().print(gson.toJson("No such service")); break;       
                 }

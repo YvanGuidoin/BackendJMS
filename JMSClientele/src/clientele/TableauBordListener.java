@@ -12,7 +12,6 @@ import basecode.CustomJMSListener;
 import basecode.CustomJMSReceiver;
 import basecode.FilesJMS;
 import messages.DescriptionBien;
-import messages.Enchere;
 import messages.ReqClient;
 import messages.ResultReqClient;
 import messages.RetourTableauBord;

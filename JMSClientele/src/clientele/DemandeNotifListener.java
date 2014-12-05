@@ -11,6 +11,7 @@ import basecode.CustomJMSListener;
 import basecode.FilesJMS;
 import messages.DemandeNotif;
 import messages.Notification;
+import messages.RetourDemandeNotif;
 
 /**
  *
@@ -34,9 +35,7 @@ public class DemandeNotifListener extends CustomJMSListener {
             } else {
                 notifs.addAll(SqlRequester.getInstance().getNotificationsByClientDepuis(demande.getIdClient(), demande.getTime()));
             }
-            for (Notification notif : notifs) {
-                NotificationSender.getInstance().send(notif);
-            }
+            RetourDemandeNotifSender.getInstance().send(new RetourDemandeNotif(notifs), mess.getJMSType());
         } catch (JMSException ex) {
             Logger.getLogger(DemandeNotifListener.class.getName()).log(Level.SEVERE, null, ex);
         }

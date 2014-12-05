@@ -11,6 +11,7 @@ import javax.jms.Message;
 import javax.jms.ObjectMessage;
 import basecode.CustomJMSListener;
 import basecode.FilesJMS;
+import messages.DescriptionBien;
 import messages.Enchere;
 import messages.MiseAJour;
 import messages.Notification;
@@ -72,15 +73,22 @@ public class EnchereListener extends CustomJMSListener {
             ArrayList<Notification> notifs = new ArrayList<>();
             Calendar cal = Calendar.getInstance();
             Timestamp date_crea = new Timestamp(cal.getTimeInMillis());
+            DescriptionBien desc = SqlRequester.getInstance().getDescById(crea.getIdBien());
             for(Enchere e : list){
                 Notification notif = new Notification(
                         e.getIdClient(),
-                        SqlRequester.getInstance().getDescById(crea.getIdBien()),
+                        desc,
                         TypeNotification.ENCHERE,
                         false,
                         date_crea);
                 notifs.add(notif);
             }
+            notifs.add(new Notification(
+                    SqlRequester.getInstance().getIdCreator(crea.getIdBien()),
+                    desc, 
+                    TypeNotification.ENCHERE, 
+                    false, 
+                    date_crea));
             //envoi notifs
             for(Notification n : notifs){
                 NotificationEnchereSender.getInstance().send(n);
