@@ -188,3 +188,23 @@ javax.jms.JMSException: Failed to process message: Failed to add message=ID:a6e0
 14:28:34.657 INFO  [main] - Server accepting connections on rmi://192.168.43.20:1099/
 14:28:34.657 INFO  [main] - JNDI service accepting connections on rmi://192.168.43.20:1099/
 14:28:34.657 INFO  [main] - Admin service accepting connections on rmi://192.168.43.20:1099/
+17:27:58.923 INFO  [main] - Server accepting connections on tcp://192.168.0.18:3035/
+17:27:58.923 INFO  [main] - JNDI service accepting connections on tcp://192.168.0.18:3035/
+17:27:58.923 INFO  [main] - Admin service accepting connections on tcp://192.168.0.18:3035/
+17:27:59.251 INFO  [main] - Server accepting connections on rmi://192.168.0.18:1099/
+17:27:59.251 INFO  [main] - JNDI service accepting connections on rmi://192.168.0.18:1099/
+17:27:59.251 INFO  [main] - Admin service accepting connections on rmi://192.168.0.18:1099/
+18:10:46.210 ERROR [ORB-Worker-22] - Failed to remove destination=reset
+javax.jms.JMSException: Cannot delete destinationreset-true since there are  active consumers.
+	at org.exolab.jms.messagemgr.DestinationManagerImpl.removeDestination(DestinationManagerImpl.java:319)
+	at org.exolab.jms.server.AdminConnection.removeDestination(AdminConnection.java:440)
+	at org.exolab.jms.server.net.JmsAdminConnectionImpl.removeDestination(JmsAdminConnectionImpl.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.exolab.jms.net.orb.DefaultORB$Handler.invoke(DefaultORB.java:572)
+	at org.exolab.jms.net.orb.DefaultORB$1.run(DefaultORB.java:530)
+	at org.exolab.jms.common.threads.ThreadPool$NotifyingRunnable.run(ThreadPool.java:211)
+	at EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

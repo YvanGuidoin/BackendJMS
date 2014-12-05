@@ -24,6 +24,7 @@ public class EnchereServlet extends HttpServlet {
         
         Enchere ench = new Enchere(enchere.getIdClient(), enchere.getIdObject(), Categories.valueOf(enchere.getCategorie()), enchere.getMontant());
         EnchereSender.getInstance().send(ench, enchere.getCategorie());
+        resp.getWriter().print(gson.toJson("OK"));
     }
     
 }

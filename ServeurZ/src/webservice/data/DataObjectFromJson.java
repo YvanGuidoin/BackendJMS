@@ -1,6 +1,5 @@
 package webservice.data;
 
-import java.sql.Timestamp;
 import messages.DescriptionBien;
 
 /**

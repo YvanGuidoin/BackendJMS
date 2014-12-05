@@ -13,9 +13,9 @@ import messages.Reset;
  */
 public class ObjectsCache {
 
-    private static ObjectsCache INSTANCE = new ObjectsCache();
+    private static final ObjectsCache INSTANCE = new ObjectsCache();
 
-    private HashMap<Integer, DescriptionBien> donnees;
+    private final HashMap<Integer, DescriptionBien> donnees;
 
     private ObjectsCache() {
         donnees = new HashMap<>();

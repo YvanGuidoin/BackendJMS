@@ -43,10 +43,10 @@ public class NotificationListener extends CustomJMSListener {
             
             Gson gson = new Gson();
             try {
-                String adresse = "http://" + LaunchServer.getNodeJS().getTextIp() + "/notification";
-                Request request = client.newRequest(adresse, 3000);
-                request.method(HttpMethod.POST);
-                request.content(new StringContentProvider(gson.toJson(notif)));
+                String adresse = LaunchServer.getNodeJS().getTextIp() + "/notification";
+                Request request = client.newRequest(adresse, 80)
+                        .method(HttpMethod.POST)
+                        .content(new StringContentProvider(gson.toJson(notif)));
                 request.send();
             } catch (InterruptedException | TimeoutException | ExecutionException ex) {
                 Logger.getLogger(NotificationListener.class.getName()).log(Level.SEVERE, null, ex);

@@ -3,6 +3,7 @@ package messages;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import basecode.Categories;
+import java.util.ArrayList;
 
 /**
  * Classe décrivant un bien en détail
@@ -24,8 +25,9 @@ public class DescriptionBien implements Serializable {
     private final double quantite;
     private final int idGagnant;
     private final Categories categorie;
+    private final ArrayList<Enchere> encheresEnCours;
 
-    public DescriptionBien(int id, int idCreator, String nom, String description, String url, Timestamp date_depart, int duree, double prix_depart, double prix_calcule, double increment, double quantite, int idGagnant, Categories categorie) {
+    public DescriptionBien(int id, int idCreator, String nom, String description, String url, Timestamp date_depart, int duree, double prix_depart, double prix_calcule, double increment, double quantite, int idGagnant, Categories categorie, ArrayList<Enchere> encheresEnCours) {
         this.id = id;
         this.idCreator = idCreator;
         this.nom = nom;
@@ -39,6 +41,7 @@ public class DescriptionBien implements Serializable {
         this.quantite = quantite;
         this.idGagnant = idGagnant;
         this.categorie = categorie;
+        this.encheresEnCours = encheresEnCours;
     }
 
     public int getId() {
@@ -92,5 +95,8 @@ public class DescriptionBien implements Serializable {
     public int getIdCreator() {
         return idCreator;
     }
-
+    
+    public ArrayList<Enchere> getEncheresEnCours() {
+        return encheresEnCours;
+    }  
 }

@@ -339,7 +339,7 @@ public class SqlRequester extends CustomSqlRequester {
         ArrayList<Enchere> list = new ArrayList<Enchere>();
         try {
             Statement stat = conn.createStatement();
-            ResultSet res = stat.executeQuery("SELECT ID_CLIENT, ID_OBJET, MONTANT_MAX FROM ENCHERE WHERE ID_OBJET = '" + idBien + "'");
+            ResultSet res = stat.executeQuery("SELECT ID_CLIENT, ID_OBJET, MAX(MONTANT_MAX) FROM ENCHERE WHERE ID_OBJET = '" + idBien + "' GROUPE BY ID_CLIENT, ID_OBJET");
             while (res.next()) {
                 list.add(new Enchere(res.getInt(1), res.getInt(2), Biens.getCategorie(), res.getDouble(3)));
             }
@@ -386,8 +386,14 @@ public class SqlRequester extends CustomSqlRequester {
     public DescriptionBien getDescById(int idBien) {
         try {
             Statement stat = conn.createStatement();
-            ResultSet res = stat.executeQuery("SELECT ID, ID_CREATOR, NOM, DESCRIPTION, URL, DATE_DEPART, DUREE, PRIX_DEPART, PRIX_CALCULE, INCREMENTAL, QUANTITE, ID_GAGNANT_COURANT FROM BIEN WHERE ID = '" + idBien + "'");
+            ResultSet res = stat.executeQuery("SELECT ID, ID_CREATOR, NOM, DESCRIPTION, URL, DATE_DEPART, DUREE, PRIX_DEPART, PRIX_CALCULE, INCREMENTAL, QUANTITE, ID_GAGNANT_COURANT, STATUT FROM BIEN WHERE ID = '" + idBien + "'");
             res.next();
+            ArrayList<Enchere> listEnchere;
+            if(res.getString(13).equals(StatutEnchere.ENCOURS.name())){
+                listEnchere = this.getEncheresByBien(idBien);
+            } else {
+                listEnchere = new ArrayList<>();
+            }
             DescriptionBien desc = new DescriptionBien(
                     res.getInt(1),
                     res.getInt(2),
@@ -401,7 +407,8 @@ public class SqlRequester extends CustomSqlRequester {
                     res.getDouble(10),
                     res.getDouble(11),
                     res.getInt(12),
-                    Biens.getCategorie());
+                    Biens.getCategorie(), 
+                    listEnchere);
             res.close();
             stat.close();
             return desc;

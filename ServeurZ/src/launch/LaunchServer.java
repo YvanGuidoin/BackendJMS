@@ -8,7 +8,6 @@ import jms.MiseAJourListener;
 import jms.ObjectsCache;
 import basecode.Adresse;
 import basecode.Annuaire;
-import basecode.Categories;
 import basecode.CustomInputString;
 import basecode.FilesJMS;
 import basecode.Lancement;
