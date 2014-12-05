@@ -11,9 +11,10 @@ public class DataObjectFromJson {
 
     private int id;
     private String nom;
+    private int idCreator;
     private String description;
     private String urlImage;
-    private Timestamp dateDepart;
+    private String dateDepart;
     private int duree;
     private double prixDepart;
     private double prixCalcule;
@@ -28,9 +29,10 @@ public class DataObjectFromJson {
         DataObjectFromJson obj = new DataObjectFromJson();
         obj.id = desc.getId();
         obj.nom = desc.getNom();
+        obj.idCreator = desc.getIdCreator();
         obj.description = desc.getDescription();
         obj.urlImage = desc.getUrl();
-        obj.dateDepart = desc.getDate_depart();
+        obj.dateDepart = desc.getDate_depart().toString();
         obj.duree = desc.getDuree();
         obj.prixDepart = desc.getPrix_depart();
         obj.prixCalcule = desc.getPrix_calcule();
@@ -56,7 +58,7 @@ public class DataObjectFromJson {
         return urlImage;
     }
 
-    public Timestamp getDateDepart() {
+    public String getDateDepart() {
         return dateDepart;
     }
 
@@ -82,6 +84,10 @@ public class DataObjectFromJson {
 
     public String getCategorie() {
         return categorie;
+    }
+
+    public int getIdCreator() {
+        return idCreator;
     }
 
 }

@@ -37,13 +37,14 @@ public class TableauBordListener extends CustomJMSListener{
             ArrayList<DescriptionBien> biens = new ArrayList<>();
             ArrayList<Enchere> encheres = new ArrayList<>();
             if(req.isWithEnch()){
-                for(Categories cat : Categories.values()){
+//                for(Categories cat : Categories.values()){
+                    Categories cat = Categories.INFORMATIQUE;
                     String determinant = cat.toString()+mess.getJMSType();
                     ReqClientSender.getInstance().send(new ReqClient(req.getIdClient()), determinant);
-                    ResultReqClient tabs = (ResultReqClient) CustomJMSReceiver.receive(FilesJMS.RETOUR_REQ_CLIENT, determinant);
+                    ResultReqClient tabs = (ResultReqClient) CustomJMSReceiver.receive(FilesJMS.RETOUR_REQ_CLIENT, "JMSType = '" +determinant + "'");
                     biens.addAll(tabs.getBiens());
                     encheres.addAll(tabs.getEncheresEnCours());
-                }
+//                }
             }
                         
             RetourTableauBord reponse = new RetourTableauBord(

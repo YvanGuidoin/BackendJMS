@@ -34,7 +34,7 @@ public class ConnexionServlet extends HttpServlet {
         ConnexionSender.getInstance().send(new ConnexionTentative(data.getUsername(), data.getPassword(), tentativeId));
         ConnexionRetour ret = (ConnexionRetour) CustomJMSReceiver.receive(FilesJMS.RETOUR_CONNEXION, "JMSType = '" + tentativeId + "'");
 
-        System.out.println("ID de tentative " + tentativeId + " - état : " + ret.getEtat());
+        System.out.println("ID de tentative " + tentativeId + " - etat : " + ret.getEtat());
 
         resp.setContentType("application/json");
         resp.setStatus(HttpServletResponse.SC_OK);

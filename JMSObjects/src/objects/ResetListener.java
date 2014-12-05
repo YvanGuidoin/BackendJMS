@@ -28,6 +28,7 @@ public class ResetListener extends CustomJMSListener {
             ObjectMessage mess = (ObjectMessage) msg;
             Reset crea = (Reset) mess.getObject();
 
+            System.out.println("demande de reset");
             ArrayList<Integer> biensEnCours = SqlRequester.getInstance().getBiensIDbyStatut(StatutEnchere.ENCOURS);
             for (int idBien : biensEnCours) {
                 MiseAJourSender.getInstance().send(new MiseAJour(SqlRequester.getInstance().getDescById(idBien)));

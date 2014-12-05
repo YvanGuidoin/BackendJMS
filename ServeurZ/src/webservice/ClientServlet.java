@@ -51,7 +51,7 @@ public class ClientServlet extends HttpServlet {
                         idRequest++;
                         TableauBord mess = new TableauBord(idCl,true);
                         TableauBordSender.getInstance().send(mess,idRequest+"");
-                        RetourTableauBord retour = (RetourTableauBord) CustomJMSReceiver.receive(FilesJMS.RETOUR_TABLE_BORD, idRequest+"");
+                        RetourTableauBord retour = (RetourTableauBord) CustomJMSReceiver.receive(FilesJMS.RETOUR_TABLE_BORD, "JMSType = '" + idRequest+"'");
                         resp.getWriter().print(gson.toJson(retour)); break;
                     case INFOS : 
                         idRequest++;

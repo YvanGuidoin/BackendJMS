@@ -194,11 +194,12 @@ public class SqlRequester extends CustomSqlRequester {
         }
     }
 
-    public int addBien(String nom, String description, String URL, Timestamp date_depart, int duree, double prix_depart, double prix_calcule, double incremental, double quantite, int id_gagnant_courant, StatutEnchere statut) {
+    public int addBien(String nom, int idCreator, String description, String URL, Timestamp date_depart, int duree, double prix_depart, double prix_calcule, double incremental, double quantite, int id_gagnant_courant, StatutEnchere statut) {
         try {
             Statement stat = conn.createStatement();
-            String req = "INSERT INTO BIEN (NOM, DESCRIPTION, URL, DATE_DEPART, DUREE, PRIX_DEPART, PRIX_CALCULE, INCREMENTAL, QUANTITE, ID_GAGNANT_COURANT, STATUT) VALUES ('"
+            String req = "INSERT INTO BIEN (NOM, ID_CREATOR, DESCRIPTION, URL, DATE_DEPART, DUREE, PRIX_DEPART, PRIX_CALCULE, INCREMENTAL, QUANTITE, ID_GAGNANT_COURANT, STATUT) VALUES ('"
                     + nom + "','"
+                    + idCreator + "','"
                     + description + "','"
                     + URL + "','"
                     + date_depart + "','"
@@ -207,8 +208,8 @@ public class SqlRequester extends CustomSqlRequester {
                     + prix_calcule + "','"
                     + incremental + "','"
                     + quantite + "','"
-                    + id_gagnant_courant + ");"
-                    + statut.toString() + "','";
+                    + id_gagnant_courant + "','"
+                    + statut.toString() + "');";
             System.out.println(req);
             stat.executeUpdate(req);
             String req2 = "CALL SCOPE_IDENTITY()";
@@ -289,7 +290,7 @@ public class SqlRequester extends CustomSqlRequester {
     public void addEnchere(double montantMax, int id_objet, int id_client) {
         try {
             Statement stat = conn.createStatement();
-            String req = "INSERT INTO ENCHERE (MONTANT_MAX, ID_OBJET, ID_CLIENT) VALUES ('" + montantMax + "','" + id_objet + "','" + id_client + ");";
+            String req = "INSERT INTO ENCHERE (MONTANT_MAX, ID_OBJET, ID_CLIENT) VALUES ('" + montantMax + "','" + id_objet + "','" + id_client + "');";
             System.out.println(req);
             stat.executeUpdate(req);
             stat.close();
@@ -301,7 +302,7 @@ public class SqlRequester extends CustomSqlRequester {
     public void updateMontantActuel(int id, double montant) {
         try {
             Statement stat = conn.createStatement();
-            String req = "UPDATE BIEN SET PRIX_CALCULE='" + montant + "') WHERE ID=" + id + "; ";
+            String req = "UPDATE BIEN SET PRIX_CALCULE='" + montant + "' WHERE ID='" + id + "';";
             System.out.println(req);
             stat.executeUpdate(req);
             stat.close();
@@ -313,7 +314,7 @@ public class SqlRequester extends CustomSqlRequester {
     public void updateGagnantActuel(int id, int idGagnant) {
         try {
             Statement stat = conn.createStatement();
-            String req = "UPDATE BIEN SET ID_GAGNANT_COURANT='" + idGagnant + "') WHERE ID=" + id + "; ";
+            String req = "UPDATE BIEN SET ID_GAGNANT_COURANT='" + idGagnant + "' WHERE ID='" + id + "';";
             System.out.println(req);
             stat.executeUpdate(req);
             stat.close();
@@ -325,7 +326,7 @@ public class SqlRequester extends CustomSqlRequester {
     public void updateStatutById(int id, StatutEnchere statut) {
         try {
             Statement stat = conn.createStatement();
-            String req = "UPDATE BIEN SET STATUT='" + statut.toString() + "') WHERE ID=" + id + "; ";
+            String req = "UPDATE BIEN SET STATUT='" + statut.toString() + "' WHERE ID='" + id + "';";
             System.out.println(req);
             stat.executeUpdate(req);
             stat.close();
@@ -385,7 +386,7 @@ public class SqlRequester extends CustomSqlRequester {
     public DescriptionBien getDescById(int idBien) {
         try {
             Statement stat = conn.createStatement();
-            ResultSet res = stat.executeQuery("SELECT ID, ID_CREATOR, NOM, DESCRIPTION, URL, DATE_DEPART, DUREE, PRIX_DEPART, PRIX_CALCULE, INCERMENTAL, QUANTITE, ID_GAGNANT_COURANT FROM BIEN WHERE ID = '" + idBien + "'");
+            ResultSet res = stat.executeQuery("SELECT ID, ID_CREATOR, NOM, DESCRIPTION, URL, DATE_DEPART, DUREE, PRIX_DEPART, PRIX_CALCULE, INCREMENTAL, QUANTITE, ID_GAGNANT_COURANT FROM BIEN WHERE ID = '" + idBien + "'");
             res.next();
             DescriptionBien desc = new DescriptionBien(
                     res.getInt(1),

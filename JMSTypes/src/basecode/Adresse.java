@@ -25,6 +25,14 @@ public class Adresse implements Serializable{
     public Adresse() {
         this.ip = null;
     }
+    
+    /**
+     * demande si l'IP est remplie
+     * @return vraie si remplie
+     */
+    public boolean isSet(){
+        return this.ip != null;
+    }
 
     /**
      * Crée une adresse à partir de la chaîne sous forme d'IP ou de lien

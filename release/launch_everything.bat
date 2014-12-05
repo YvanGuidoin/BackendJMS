@@ -11,7 +11,9 @@ start %JAVA_FILE% banque.jar localhost
 cd ..\Clientele
 start %JAVA_FILE% clientele.jar localhost
 cd..\Electromenager
-start "" %JAVA_FILE% objects.jar localhost ELECTROMENAGER -launch
+rem start "" %JAVA_FILE% objects.jar localhost ELECTROMENAGER -launch
+START /B CMD /C CALL "launch.bat"
+pause
 cd ..\Hifi
 start "" %JAVA_FILE% objects.jar localhost HIFI -launch
 cd ..\Informatique

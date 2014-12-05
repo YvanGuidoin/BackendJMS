@@ -21,7 +21,7 @@ import messages.ResultReqClient;
 public class ReqClientListener extends CustomJMSListener {
 
     public ReqClientListener() {
-        super(FilesJMS.REQ_CLIENT, "JMSType like '" + Biens.getCategorie().asDeterminant()+"%'");
+        super(FilesJMS.REQ_CLIENT, "JMSType LIKE '" + Biens.getCategorie().asDeterminant()+"%'");
     }
 
     @Override

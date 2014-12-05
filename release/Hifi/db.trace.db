@@ -52,3 +52,507 @@ SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
 12-03 10:56:06 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
 SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:33:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:33:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:33:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:33:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:33:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:34:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:34:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:34:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:34:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:34:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:34:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:35:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:35:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:35:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:35:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:35:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:35:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:36:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:36:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:36:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:36:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:36:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:36:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:37:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:37:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:37:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:37:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:37:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:37:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:38:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:38:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:38:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:38:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:38:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:38:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:39:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:39:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:39:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:39:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:39:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:39:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:40:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:40:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:40:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:40:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:40:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:40:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:41:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:41:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:41:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:41:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:41:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:41:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:42:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:42:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:42:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:42:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:42:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:42:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:43:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:43:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:43:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:43:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:43:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:43:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:44:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:44:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:44:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:44:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:44:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:44:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:45:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:45:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:45:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:45:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:45:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:45:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:46:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:46:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:46:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:46:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:46:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:46:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:47:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:47:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:47:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:47:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:47:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:47:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:48:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:48:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:48:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:48:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:48:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:48:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:49:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:49:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:49:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:49:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:49:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:49:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:50:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:50:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:50:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:50:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:50:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:50:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:51:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:51:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:51:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:51:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:51:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:51:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:52:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:52:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:52:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:52:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:52:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:52:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:53:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:56:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:57:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:57:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:57:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:57:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:57:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:57:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:58:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:58:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:58:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:58:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:58:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:58:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:59:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:59:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:59:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:59:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:59:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 11:59:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:00:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:00:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:00:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:00:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:00:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:00:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:01:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:01:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:01:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:01:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:01:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:01:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:02:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:02:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:02:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:02:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:02:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:03:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:03:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:03:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:03:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:03:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:03:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:04:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:04:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:04:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]
+12-04 12:04:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "BIEN" not found; SQL statement:
+SELECT ID FROM BIEN WHERE STATUT = 'ENCOURS' [42102-182]

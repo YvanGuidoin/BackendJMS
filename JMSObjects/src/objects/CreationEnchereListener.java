@@ -29,6 +29,7 @@ public class CreationEnchereListener extends CustomJMSListener {
 
             int idCreated = SqlRequester.getInstance().addBien(
                     crea.getNom(),
+                    crea.getIdCreator(),
                     crea.getDescription(),
                     crea.getUrl(),
                     crea.getDate_depart(),

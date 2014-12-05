@@ -1,5 +1,6 @@
 package webservice;
 
+import basecode.Categories;
 import com.google.gson.Gson;
 import java.io.IOException;
 import java.sql.Timestamp;
@@ -10,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import jms.CreationEnchereSender;
 import jms.CreationSender;
 import jms.FermetureEnchereSender;
 import jms.ObjectsCache;
@@ -27,9 +29,8 @@ public class ObjectsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Gson gson = new Gson();
-        String name = req.getParameter("name");
         String categorie = req.getParameter("categorie");
-        String description = req.getParameter("description");
+        String research = req.getParameter("research");
         String id = req.getParameter("id");
         ArrayList<DataObjectFromJson> objs = new ArrayList<>();
         
@@ -38,21 +39,26 @@ public class ObjectsServlet extends HttpServlet {
             objs.add(DataObjectFromJson.DataObjectFromDescriptionBien(
                 ObjectsCache.getInstance().getById(Integer.parseInt(id))));
         } else {
-            
-            ArrayList<DescriptionBien> biens = ObjectsCache.getInstance().getAll();
+            ArrayList<DescriptionBien> biens;
+            if(categorie != null || research!= null){
+                System.out.println("Recherche d'objets : (" + categorie + ";" + research + ")");
+                biens = ObjectsCache.getInstance().researchByParams(research, categorie);
+            } else {
+                biens = ObjectsCache.getInstance().getAll();
+            }
             for (DescriptionBien bien : biens) {
                 objs.add(DataObjectFromJson.DataObjectFromDescriptionBien(bien));
-            }
-            
+            }   
         }
-        
-        resp.getWriter().print(gson.toJson(objs.toArray()));
+        resp.getWriter().print(gson.toJson(objs));
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Gson gson = new Gson();
         DataObjectFromJson data = gson.fromJson(req.getReader(), DataObjectFromJson.class);
+        System.out.print("Inscription objet :");
+        System.out.println(req.getReader());
         
         Calendar now = Calendar.getInstance();
         CreationEnchere message = new CreationEnchere(
@@ -65,7 +71,8 @@ public class ObjectsServlet extends HttpServlet {
                 data.getPrixDepart(), 
                 data.getIncrement(), 
                 data.getQuantite());
-        CreationSender.getInstance().send(message, data.getCategorie());
+        CreationEnchereSender.getInstance().send(message, data.getCategorie());
+        resp.getWriter().print("{\"OK\"}");
     }
 
     @Override
