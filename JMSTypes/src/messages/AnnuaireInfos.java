@@ -9,6 +9,8 @@ import basecode.FilesJMS;
  * @author Yvan
  */
 public class AnnuaireInfos implements MessageJMSCustom {
+    
+    private static final long serialVersionUID = 6246924698428962L;
     final private Map<FilesJMS, Adresse> data;
 
     public AnnuaireInfos(Map<FilesJMS, Adresse> data) {

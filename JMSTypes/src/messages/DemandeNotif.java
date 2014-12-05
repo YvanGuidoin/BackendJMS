@@ -7,6 +7,8 @@ import java.sql.Timestamp;
  * @author Yvan
  */
 public class DemandeNotif implements MessageJMSCustom {
+    
+    private static final long serialVersionUID = 689249684896269L;
     final private int idClient;
     final private Timestamp time;
     final private boolean onlyNonLue;

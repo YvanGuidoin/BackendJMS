@@ -8,6 +8,8 @@ import java.sql.Timestamp;
  * @author Yvan
  */
 public class Notification implements MessageJMSCustom {
+    
+    private static final long serialVersionUID = 8692492464894L;
     final private int idClient;
     final private DescriptionBien bien;
     final private TypeNotification type;

@@ -7,6 +7,7 @@ package messages;
  */
 public class FermetureEnchere implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 64269489624964269L;
     private final int idBien;
 
     public FermetureEnchere(int idBien) {

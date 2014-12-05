@@ -9,6 +9,7 @@ import basecode.Categories;
  */
 public class Enchere implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 64289469469L;
     private final int idClient;
     private final int idBien;
     private final Categories cat;

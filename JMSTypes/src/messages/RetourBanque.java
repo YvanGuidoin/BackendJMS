@@ -7,6 +7,7 @@ package messages;
  */
 public class RetourBanque implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 97897897897945456L;
     private final String IBAN;
     private final Transaction etat;
 

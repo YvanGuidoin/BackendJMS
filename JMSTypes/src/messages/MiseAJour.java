@@ -7,6 +7,7 @@ package messages;
  */
 public class MiseAJour implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 6942894829849L;
     private final DescriptionBien objet;
 
     public MiseAJour(DescriptionBien objet) {

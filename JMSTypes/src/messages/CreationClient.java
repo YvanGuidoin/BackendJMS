@@ -7,6 +7,7 @@ package messages;
  */
 public class CreationClient implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 542154214541343L;
     private final String login;
     private final String mdp;
     private final String IBAN;

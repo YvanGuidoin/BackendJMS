@@ -8,6 +8,7 @@ package messages;
  */
 public class FinEnchere implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 6826924692L;
     private final int idVendeur;
     private final int idAcheteur;
     private final DescriptionBien bien;

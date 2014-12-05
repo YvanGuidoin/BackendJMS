@@ -7,6 +7,7 @@ package messages;
  */
 public class ConnexionRetour implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 526869246924696L;
     private final ConnexionRes etat;
     private final int idClient;
 

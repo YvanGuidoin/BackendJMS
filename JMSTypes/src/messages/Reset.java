@@ -6,5 +6,5 @@ package messages;
  * @author Yvan
  */
 public class Reset implements MessageJMSCustom {
-
+    private static final long serialVersionUID = 43824239429L;
 }

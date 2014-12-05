@@ -7,6 +7,7 @@ package messages;
  */
 public class ConnexionTentative implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 6246894286942869L;
     private final String login;
     private final String mdp;
     private final int idRequest;

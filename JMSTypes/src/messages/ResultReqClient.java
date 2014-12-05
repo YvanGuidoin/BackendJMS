@@ -8,7 +8,8 @@ import java.util.ArrayList;
  * @author Yvan
  */
 public class ResultReqClient implements MessageJMSCustom {
-
+    
+    private static final long serialVersionUID = 7787987897997L;
     private final ArrayList<DescriptionBien> biens;
     private final ArrayList<Enchere> encheresEnCours;
 

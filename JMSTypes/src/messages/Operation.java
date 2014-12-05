@@ -7,6 +7,7 @@ package messages;
  */
 public class Operation implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 648984988424929L;
     private final String IBAN;
     private final double montant;
     private final Ecriture transaction;

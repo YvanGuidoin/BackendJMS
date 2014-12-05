@@ -9,6 +9,7 @@ import java.sql.Timestamp;
  */
 public class CreationEnchere implements MessageJMSCustom {
 
+    private static final long serialVersionUID = 62498246892496L;
     private final int idCreator;
     private final String nom;
     private final String description;

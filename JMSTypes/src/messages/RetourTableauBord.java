@@ -8,6 +8,7 @@ import java.util.ArrayList;
  */
 public class RetourTableauBord implements MessageJMSCustom {
     
+    private static final long serialVersionUID = 13212465123L;
     private final String login;
     private final String IBAN;
     private final String nom;

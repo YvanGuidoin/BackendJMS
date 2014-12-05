@@ -12,6 +12,7 @@ import java.util.ArrayList;
  */
 public class DescriptionBien implements Serializable {
 
+    private static final long serialVersionUID = 6824946982849624L;
     private final int id;
     private final int idCreator;
     private final String nom;

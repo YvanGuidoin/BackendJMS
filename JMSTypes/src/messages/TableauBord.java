@@ -5,6 +5,8 @@ package messages;
  * @author Yvan
  */
 public class TableauBord implements MessageJMSCustom {
+    
+    private static final long serialVersionUID = 11314512365535423L;
     final private int idClient;
     final private boolean withEnch;
 
