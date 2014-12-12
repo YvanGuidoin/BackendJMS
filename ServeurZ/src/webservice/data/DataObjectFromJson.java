@@ -20,6 +20,7 @@ public class DataObjectFromJson {
     private double increment;
     private double quantite;
     private String categorie;
+    private String etatEnchere;
 
     public DataObjectFromJson() {
     }
@@ -38,6 +39,7 @@ public class DataObjectFromJson {
         obj.increment = desc.getIncrement();
         obj.quantite = desc.getQuantite();
         obj.categorie = desc.getCategorie().toString();
+        obj.etatEnchere = desc.getStatut().toString();
         return obj;
     }
 
@@ -89,4 +91,7 @@ public class DataObjectFromJson {
         return idCreator;
     }
 
+    public String getEtatEnchere() {
+        return etatEnchere;
+    }
 }
