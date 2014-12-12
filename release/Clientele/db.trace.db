@@ -1,24 +1,10 @@
-12-04 11:57:14 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "CLIENTELE" not found; SQL statement:
-SELECT MDP, ID FROM CLIENTELE WHERE LOGIN = 'teddy' [42102-182]
-12-04 11:58:26 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "CLIENTELE" not found; SQL statement:
-SELECT MDP, ID FROM CLIENTELE WHERE LOGIN = 'teddy' [42102-182]
-12-04 11:59:21 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "CLIENTELE" not found; SQL statement:
-INSERT INTO CLIENTELE (LOGIN, MDP, IBAN, NOM, PRENOM, ADRESSE) VALUES ('teddy','tacsin','123456789','Tacsin','Teddy','42 rue blabla, 31000 Toulouse') [42102-182]
-12-04 11:59:25 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "CLIENTELE" not found; SQL statement:
-SELECT MDP, ID FROM CLIENTELE WHERE LOGIN = 'teddy' [42102-182]
-12-04 11:59:33 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "CLIENTELE" not found; SQL statement:
-SELECT MDP, ID FROM CLIENTELE WHERE LOGIN = 'teddy' [42102-182]
-12-05 13:47:03 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "CLIENTELE" not found; SQL statement:
-SELECT MDP, ID FROM CLIENTELE WHERE LOGIN = 'teddy' [42102-182]
-12-05 13:47:28 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "CLIENTELE" not found; SQL statement:
-INSERT INTO CLIENTELE (LOGIN, MDP, IBAN, NOM, PRENOM, ADRESSE) VALUES ('teddy','tacsin','123456789','Tacsin','Teddy','42 rue blabla, 31000 Toulouse') [42102-182]
-12-05 13:47:35 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "CLIENTELE" not found; SQL statement:
-SELECT MDP, ID FROM CLIENTELE WHERE LOGIN = 'teddy' [42102-182]
+12-12 14:16:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 14:16:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 14:16:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 14:16:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 14:16:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]

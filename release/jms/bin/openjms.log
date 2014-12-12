@@ -258,3 +258,9 @@ javax.jms.JMSException: Cannot delete destinationretourTablBord-true since there
 23:02:13.158 INFO  [main] - Server accepting connections on rmi://192.168.0.18:1099/
 23:02:13.158 INFO  [main] - JNDI service accepting connections on rmi://192.168.0.18:1099/
 23:02:13.158 INFO  [main] - Admin service accepting connections on rmi://192.168.0.18:1099/
+13:39:26.236 INFO  [main] - Server accepting connections on tcp://130.120.208.148:3035/
+13:39:26.246 INFO  [main] - JNDI service accepting connections on tcp://130.120.208.148:3035/
+13:39:26.253 INFO  [main] - Admin service accepting connections on tcp://130.120.208.148:3035/
+13:39:26.406 INFO  [main] - Server accepting connections on rmi://130.120.208.148:1099/
+13:39:26.409 INFO  [main] - JNDI service accepting connections on rmi://130.120.208.148:1099/
+13:39:26.411 INFO  [main] - Admin service accepting connections on rmi://130.120.208.148:1099/

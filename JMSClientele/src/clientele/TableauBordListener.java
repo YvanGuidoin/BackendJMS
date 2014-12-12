@@ -35,13 +35,12 @@ public class TableauBordListener extends CustomJMSListener{
             
             ArrayList<DescriptionBien> biens = new ArrayList<>();
             if(req.isWithEnch()){
-//                for(Categories cat : Categories.values()){
-                    Categories cat = Categories.INFORMATIQUE;
+                for(Categories cat : Categories.values()){
                     String determinant = cat.toString()+mess.getJMSType();
                     ReqClientSender.getInstance().send(new ReqClient(req.getIdClient()), determinant);
                     ResultReqClient tabs = (ResultReqClient) CustomJMSReceiver.receive(FilesJMS.RETOUR_REQ_CLIENT, "JMSType = '" +determinant + "'");
                     biens.addAll(tabs.getBiens());
-//                }
+                }
             }
                         
             RetourTableauBord reponse = new RetourTableauBord(

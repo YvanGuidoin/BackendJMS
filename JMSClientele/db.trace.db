@@ -586,3 +586,23 @@ org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
 org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
 12-05 23:03:13 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
+12-12 13:46:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-182]
